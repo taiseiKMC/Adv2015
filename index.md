@@ -1,7 +1,7 @@
 #Unreal Engineを触った
 
   この記事は[KMCアドベントカレンダー](http://www.adventar.org/calendars/809#list-2015-12-12)23日目の記事です
-  22日目の記事はlp6mさんの[フルカラーバーサライタを作った話](lp6m.hatenablog.com/entry/2015/12/22/040153)でした。電子工作はKMCではあまり見ないので新鮮でした。
+  22日目の記事はlp6mさんの[フルカラーバーサライタを作った話](http://lp6m.hatenablog.com/entry/2015/12/22/040153)でした。電子工作はKMCではあまり見ないので新鮮でした。
   
   こんにちは KMC-1回生のid:taiseiです。
   今日はUnreal Engine 4の話を書きます。
