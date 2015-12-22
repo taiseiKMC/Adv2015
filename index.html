@@ -9,21 +9,21 @@
   <link rel="stylesheet" href="index.css" type="text/css" />
 </head>
 <body>
-<h1 id="unreal-engineを触る">Unreal Engineを触る</h1>
-<p>この記事は<a href="http://www.adventar.org/calendars/809#list-2015-12-12">KMCアドベントカレンダー</a>23日目の記事です 22日目の記事はhogehogeでした</p>
+<h1 id="unreal-engineを触った">Unreal Engineを触った</h1>
+<p>この記事は<a href="http://www.adventar.org/calendars/809#list-2015-12-12">KMCアドベントカレンダー</a>23日目の記事です 22日目の記事はlp6mさんの<a href="lp6m.hatenablog.com/entry/2015/12/22/040153">フルカラーバーサライタを作った話</a>でした。電子工作はKMCではあまり見ないので新鮮でした。</p>
 <p>こんにちは KMC-1回生のid:taiseiです。 今日はUnreal Engine 4の話を書きます。</p>
-<h2 id="unreal-engine-4とは">Unreal Engine 4とは</h2>
+<h2 id="unreal-engine-4とは"><a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal Engine 4</a>とは</h2>
 <p>　Unreal Engine 4 とは今年(2015/3)無償化されたゲームエンジンです。 一つ前のバージョンであるUnreal Engine 3は、リアルタイム3Dにも関わらず2Dアニメーションにしかみえないという「Guilty Gear Xrd -Sign-」というゲームに使われていたり、Unreal Engine 4は「ストリートファイターV」「ファイナルファンタジーVⅡ」「鉄拳7」「キングダムハーツⅢ」「ドラゴンクエストXⅠ」といった国産ソフトが次々と採用を発表する程の実績があります。</p>
 <p>　Unreal Engine 4はゲーム販売において、四半期の売上が3000ドルを超えた場合に限り、5%のロイヤリティが発生します。およそ30万円ですね。個人、企業で提供されるツールに差異はなく、個人の開発者にとっては非常に強力な開発ツールが降ってきたというわけです。</p>
 <h2 id="特徴">特徴</h2>
 <p>　Unreal Engine 4は強力なレンダラーで非常に綺麗なグラフィックを提供してくれます。裏を返せば、まともに動かすには相応のスペックが必要です。推奨ハードはWindows7/8、 クアッドコアIntelまたはAMDの、2.5GHz以上のプロセッサ、 8GB RAM、 DirectX11対応のグラフィックカードとあります。かなりのハイスペックが要求されていますね。</p>
 <p>　また、クロスプラットフォームで、Windows PC、Mac OS X、iOS、Android、VR、Linux、SteamOS、HTML5、デベロッパー登録すればPS4、XBoxOneで使用できます。非常に幅広いですね。</p>
-<p>　さらに、Unreal Engine 4はGitHubでソースコードを誰でも閲覧、改変できます。約300万行のc++のソースコードがあるそうです。</p>
+<p>　さらに、Unreal Engine 4はGitHubでソースコードを登録すれば誰でも閲覧、改変できます。約300万行のc++のソースコードがあるそうです。</p>
 <h2 id="導入した">導入した</h2>
 <p>　UnrealEngine4の公式サイトへ行くとダウンロードできます。EpicGamesのアカウントを登録する必要があります。Windows用とMac用がありました。またこのプロフィールにGithubのアカウントを登録するとUnreal EngineのGitHubリポジトリに招待されます。</p>
 <div class="figure">
-<img src="launcher.png" alt="launcher" />
-<p class="caption">launcher</p>
+<img src="launcher.png" alt="" />
+
 </div>
 <p>　ここでダウンロードするのはLauncherです。というのもUnreal Engineの所有者はEpicGamesというゲーム会社で、LauncherにはEpicGamesのゲームのコンテンツも含まれています。Unreal Engine 4をインストールするには、LauncherのタブからUnreal Engine-&gt;ライブラリを選び、エンジンスロットを追加すればよいです。ちなみに、チュートリアルというタブには解説動画が、マーケットプレイスにはゲームに使えそうな素材が販売してあります。</p>
 <p>　Unreal Engine 4(Unreal Editorというソフト名です)をインストールし起動すると、幾つかのサンプルプロジェクトと言語が選べます。サンプルプロジェクトには2Dアクションゲームからレーシングゲームまで結構いろいろありました。言語は独自言語のブループリントとc++が選べます。後で変更も追加もできるらしいので好きなものを選べばいいでしょう。</p>
@@ -32,33 +32,34 @@
 <p>　入手すると、ライブラリ-&gt;マイダウンロードに追加されます。プロジェクトに追加するを選択すればプロジェクトのディレクトリ下にコンテンツがコピーされます。このOpen World Demo Collectionはなんと6.4GBもあります。</p>
 <p>　追加が終わったら、マップを追加したプロジェクトを開きます。テクスチャやモデルを個別に使用することもできますが、まずは配布されたマップを表示してみることにします。Unreal Editorからファイル-&gt;レベルを開く で、KiteDemo-&gt;Maps-&gt;Showcaseを開きます。メモリ不足でフリーズしたりロード失敗したりしましたが、なんとか開けました。</p>
 <div class="figure">
-<img src="demoload.jpg" alt="demoload" />
-<p class="caption">demoload</p>
+<img src="demoload.jpg" alt="" />
+
 </div>
-<p>　岩の凹凸、芝や花、葉っぱの一枚に至って細かく描画されています。パワフルですね。</p>
+<p>　岩の凹凸、芝や花、葉っぱの一枚に至って細かく描画されています。非常にパワフルです。</p>
 <h2 id="使い方">使い方</h2>
-<p>　大体の使い方は公式ドキュメントに揃っています。チュートリアルビデオも揃っているのでまずはそれをみてみるといいかもしれないです。また、公式のドキュメントに、<a href="https://docs.unrealengine.com/latest/JPN/GettingStarted/FromUnity/index.html">Unity引越しガイド</a>というものがあります。なんとここではUnityのエディタとUnreal Engine 4のエディタを直接比較しています。(公式で競合ソフトと直接比較しているって凄まじい...)このドキュメントをみても分かる通り、Unreal Engineは大体Unityを使うイメージで操作します。オブジェクトをゲーム画面のところ(ビューポート)へ直接ドラッグすればオブジェクトが設置でき、詳細パネルからはパラメーターを設定することができます。</p>
+<p>　大体の使い方は公式ドキュメントに揃っています。チュートリアルビデオも揃っているのでまずはそれをみてみるといいかもしれないです。また、公式のドキュメントに、<a href="https://docs.unrealengine.com/latest/JPN/GettingStarted/FromUnity/index.html">Unity引越しガイド</a>というものがあります。なんとここではUnityのエディタとUnreal Engine 4のエディタを直接比較しています。(公式で競合ソフトと直接比較しているって凄まじい...)　このドキュメントをみても分かる通り、Unreal Engineは大体Unityを使うイメージで操作します。</p>
 <p>　しかし、記述に使う言語は異なっていて、UnityではC#、JavaScript、Boo(Python方言らしい)が使用可能ですが、Unreal EngineにはC++とBluePrintという独自言語を使うことになっています。BluePrintではGUIでビジュアルノードをフローチャートのように結んで処理を記述することができます。</p>
 <div class="figure">
-<img src="blueprint.png" alt="blueprint" />
-<p class="caption">blueprint</p>
+<img src="blueprint.png" alt="" />
+
 </div>
-<p>変数、関数、ループ、if分岐、クラス、イベントと大体揃っているので、簡単なプログラムならこれで記述できます。BluePrintはc++に変換可能なのも有り難い機能でしょう。また、BluePrintにはクラスとレベルの二種類があります。BluePrintクラスはc++のクラスのようなものです。クラスにマテリアルやムーブメントといったコンポーネントを追加することでそれらをまとめて1オブジェクトとして扱えます。UnityのPrefabにあたる操作ともいえます。レベルはUnityのシーンにあたるもので、レベルBluePrintは1レベルに1つだけ存在して、そのレベルに存在するアクタ(オブジェクト)にアクセスできます。</p>
+<p>変数、関数、ループ、if分岐、クラス、イベントと大体揃っているので、簡単なプログラムならこれで記述できます。BluePrintはc++に変換可能なのも有り難い機能でしょう。視覚的に記述でき、デバッグも容易にできるのでUnreal Engine 4を使うならば少なからず使うことになるでしょう。</p>
 <h2 id="使った">使った</h2>
 <p>　とりあえずこんな感じのものができました。</p>
 <div class="figure">
-<img src="work.png" alt="work" />
-<p class="caption">work</p>
+<img src="work.png" alt="" />
+
 </div>
 <div class="figure">
-<img src="demo.gif" alt="demo" />
-<p class="caption">demo</p>
+<img src="demo.gif" alt="" />
+
 </div>
-<p>上から降ってくるボールをバーで跳ね返すゲームです。こぼすと爆発します。アップロードは容量とか互換性とかで厳しそうでした...</p>
-<p>　やったことを簡単に説明します。BluePrintクラスでballとfloorを作ります。floorは画面下部の木の床に対応していて、触れたballをDestroyします。ballはDestroyされたときに爆発パーティクルを生成するよう記述しています。壁と天井(Cube)と、コンポーネントにバー(横向きのCylinder)を持つPawnを配置し、レベルBluePrintでマウスの動きをバーに加える処理と、時間経過でballを生成する処理をします。最後にカメラをいい感じの場所において細かい設定をします。ざっとこんな感じです。物理演算はUnreal Engine 4がいい感じにやってくれます。物理演算が気に入らなければ、物理マテリアルのアセットを作ってインポートすれば摩擦係数とか反発係数とかが設定できます。移動可能な平面の束縛、物理演算の有無、衝突判定の有無、プレイヤーポーンの設定、テクスチャの設定等はすべて詳細タブから設定できます。BluePrintクラスのところを除くとさほどUnityと変わらないとも言えると思います。</p>
+<p>上から降ってくるボールをバーで跳ね返すゲームです。こぼすと爆発します。アップロードは容量とかで厳しそうでした...</p>
+<p>　やったことを簡単に説明していきます。まず、BluePrintクラスでballとfloorを作ります。(BluePrintクラスはC++のクラスにあたるもので、マテリアル、ムーブメント、コンポーネントをまとめて1オブジェクトと扱うことができます)　floorは画面下部の木の床に対応していて、触れたballをDestroyします。 <img src="classblueprint.png" alt="" /> これはballのBluePrintクラスで、Destroyされたときのパーティクル生成処理が書かれています。DestroyされるとイベントEnd Playが呼ばれ、フローが流れて爆発パーティクル生成関数が呼ばれます。またこのクラスはSphereを継承しているので、生成するとUnreal Engine 4に組み込まれている球オブジェクトであるSphereが実体として生成されます。</p>
+<p>　次に、今作ったfloorと、壁と天井(Cube)と、コンポーネントにバー(横向きのCylinder)を持つPawnをゲーム画面(ビューポート)へドラッグ&amp;ドロップで配置し、レベルBluePrintでマウスの動きをバーに加える処理と、時間経過でballを生成する処理をします。 (レベルBluePrintはそのレベル(シーン)に存在するオブジェクトにアクセスでき、1レベルに1つだけ存在します。先程貼ったBluePrintがこの2つの処理をします) 　最後にカメラをいい感じの場所において細かい設定をします。 <img src="edit.jpg" alt="" /> 移動可能な平面の束縛、物理演算の有無、衝突判定の有無、プレイヤーポーンの設定、テクスチャの設定等は画面右下に見えている詳細タブから設定できます。物理演算はUnreal Engine 4がいい感じにやってくれます。動きが気に入らなければ、物理マテリアルのアセットを作って摩擦係数とか反発係数とかをオーバーライドできます。BluePrintクラスでの記述はUnreal Engine特有といえると思いますが、それ以外のところはさほどUnityと変わらないとも言えると思います。</p>
 <h2 id="使ってみて">使ってみて</h2>
-<p>Unreal Engine 4は拡張性の上がったUnityという感じです。拡張性が上がった分敷居は上がっていますし、無償化して間もないUnreal Engine 4は公式以外のDocumentは比較的少ないです。インポート、エクスポートをすると、メモリが足りなくて結構落ちたりしますが、それでもグラフィックの質は目を見張るものがあります。本気で3Dゲームを作ろうと思うならば検討の余地はあるでしょう。</p>
+<p>　Unreal Engine 4は拡張性の上がったUnityという感じです。拡張性が上がった分敷居は上がっていますし、無償化して間もないUnreal Engine 4は公式以外の資料は比較的少ないです。インポート、エクスポートをするとメモリが足りなくて落ちたりはしますが、それでもグラフィックの質は目を見張るものがあります。本気で3Dゲームを作ろうと思うならば是非使ってみるといいと思います。</p>
 <p>　明日、24日の記事の <a href="http://www.adventar.org/calendars/809#list-2015-12-02">KMC Advent Calendar 2015 - Adventar</a>の記事は <em>hakurin</em> さんによる「クリスマス・イヴをつよく生きる」です。クリスマス近いらしいですね。</p>
-<h3 id="unreal-engine-4-公式"><a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal Engine 4 公式</a></h3>
+<h3 id="section"></h3>
 </body>
 </html>
